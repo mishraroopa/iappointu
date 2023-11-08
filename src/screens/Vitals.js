@@ -1,7 +1,13 @@
-import { Image, StyleSheet, Text, View,TextInput } from 'react-native'
+import { Image, StyleSheet, Text, View} from 'react-native'
 import React from 'react'
+import { ScrollView, TouchableOpacity} from 'react-native-gesture-handler'
 
-const Vitals = () => {
+const Vitals = ({navigation}) => {
+
+  const dash = () => {
+    
+    navigation.navigate('Dashboard');
+  };
 
 
   return (
@@ -21,7 +27,7 @@ const Vitals = () => {
         style={{width:'17%',height:'54%',marginLeft:'75%',top:'-59%'}}
     />
   </View>
- 
+ <ScrollView>
  <View style={{marginTop:5}}>
     <Text style={styles.text}>Vitals</Text>
  </View>
@@ -35,13 +41,14 @@ const Vitals = () => {
  
     
     
-  
+  <View style={{bottom:-15}}>
   <Image source={require('../Assets/img/age.png')}
       style={{width:25,height:25,marginTop:'-6%'}}/>
+      </View>
    <Text style={styles.age}>Age(in year):</Text>
    <Text style={styles.update}>Last Updated on</Text>
    <Text style={styles.number}>25</Text>
-   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10}}>16/10/23</Text>
+   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10,color:'grey'}}>16/10/23</Text>
   
 
   <View style={[styles.underline]} /> 
@@ -53,13 +60,14 @@ const Vitals = () => {
  
     
     
-  
+  <View style={{bottom:-19}}>
   <Image source={require('../Assets/img/height.png')}
       style={{width:25,height:25,marginTop:'-6%'}}/>
+      </View>
    <Text style={styles.age}>Height(in CM):</Text>
    <Text style={styles.update}>Last Updated on</Text>
    <Text style={styles.number}>155</Text>
-   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10}}>16/10/23</Text>
+   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10,color:"grey"}}>16/10/23</Text>
   
 
   <View style={[styles.underline]} /> 
@@ -71,13 +79,14 @@ const Vitals = () => {
  
     
     
- 
+ <View style={{bottom:-15}}>
   <Image source={require('../Assets/img/weight-scale.png')}
       style={{width:25,height:25,marginTop:'-6%'}}/>
+      </View>
    <Text style={styles.age}>Weight(in KG):</Text>
    <Text style={styles.update}>Last Updated on</Text>
    <Text style={styles.number}>95</Text>
-   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10}}>16/10/23</Text>
+   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10,color:'grey'}}>16/10/23</Text>
   
 
   <View style={[styles.underline]} /> 
@@ -92,13 +101,14 @@ const Vitals = () => {
  
     
     
-  
+  <View style={{top:17}}>
   <Image source={require('../Assets/img/temp.png')}
       style={{width:25,height:25,marginTop:'-6%'}}/>
+      </View>
    <Text style={styles.age}>Oral(Mouth):</Text>
    <Text style={styles.update}>Last Updated on</Text>
    <Text style={styles.number}>66</Text>
-   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10}}>16/10/23</Text>
+   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10,color:'grey'}}>16/10/23</Text>
   
 
   <View style={[styles.underline]} /> 
@@ -114,13 +124,14 @@ const Vitals = () => {
  
     
     
- 
+ <View style={{top:13}}>
   <Image source={require('../Assets/img/lifeline.png')}
       style={{width:25,height:25,marginTop:'-6%'}}/>
+      </View>
    <Text style={styles.age}>Radial(Arm):</Text>
    <Text style={styles.update}>Last Updated on</Text>
    <Text style={styles.number}>103</Text>
-   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10}}>16/10/23</Text>
+   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10,color:'grey'}}>16/10/23</Text>
   
 
   <View style={[styles.underline]} /> 
@@ -132,13 +143,14 @@ const Vitals = () => {
  
     
     
-  
+  <View style={{bottom:-8}}>
   <Image source={require('../Assets/img/ventilator.png')}
-      style={{width:25,height:25,marginTop:'-6%'}}/>
+      style={{width:25,height:25,marginTop:'-2%'}}/>
+      </View>
    <Text style={styles.age}>Respiration Rate:</Text>
    <Text style={styles.update}>Last Updated on</Text>
    <Text style={styles.number}>103</Text>
-   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10}}>16/10/23</Text>
+   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10,color:'grey'}}>16/10/23</Text>
   
 
   <View style={[styles.underline]} /> 
@@ -150,13 +162,14 @@ const Vitals = () => {
  
     
     
-  
+  <View style={{bottom:-20}}>
   <Image source={require('../Assets/img/blood.png')}
-      style={{width:25,height:25,marginTop:'-6%'}}/>
+      style={{width:25,height:25,marginTop:'-10%'}}/>
+  </View>
    <Text style={styles.age}>Blood Pressure:</Text>
    <Text style={styles.update}>Last Updated on</Text>
    <Text style={styles.number}>103</Text>
-   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10}}>16/10/23</Text>
+   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10,color:'grey'}}>16/10/23</Text>
   
 
   <View style={[styles.underline]} /> 
@@ -168,22 +181,30 @@ const Vitals = () => {
  
     
     
-  
+  <View style={{bottom:-15}}>
   <Image source={require('../Assets/img/oxygen.png')}
-      style={{width:25,height:25,marginTop:'-6%'}}/>
+      style={{width:25,height:25,marginTop:'-7%'}}/>
+      </View>
    <Text style={styles.age}>Oxygen Saturation:</Text>
    <Text style={styles.update}>Last Updated on</Text>
    <Text style={styles.number}>103</Text>
-   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10}}>16/10/23</Text>
+   <Text style={{marginLeft:'80%',top:'-60%',fontSize:10,color:'grey'}}>16/10/23</Text>
   
 
   <View style={[styles.underline]} /> 
 
 </View>
-
-
+   
+   <TouchableOpacity onPress={dash}>
+   <Text style={{bottom:'490%',alignSelf:'center',color:'black'}}>Dashboard</Text>
+   </TouchableOpacity>
+  
+  </ScrollView>
   </View>
+ 
+ 
   )
+
 }
 
 export default Vitals
@@ -222,14 +243,14 @@ const styles = StyleSheet.create({
 
       color:'black',
       marginLeft:'10%',
-      top:'-25%',
+      top:'-18%',
       fontSize:14,
       
     },
 
     update:{
     color:'grey',
-    top:'-25%',
+    top:'-18%',
     marginLeft:'10%',
     fontSize:10
 
@@ -249,7 +270,7 @@ const styles = StyleSheet.create({
  borderBottomWidth: 0,
  borderBottomColor: '#000', 
  marginLeft:'5%',
- top:'3%'
+ top:'4%'
  
 }, 
 
@@ -271,7 +292,7 @@ container2:{
   borderBottomWidth: 0,
   borderBottomColor: '#000', 
   marginLeft:'5%',
-  top:'-10%'
+  top:'1%'
   
 
 },
@@ -280,11 +301,11 @@ container3:{
   borderBottomWidth: 0,
   borderBottomColor: '#000', 
   marginLeft:'5%',
-  top:'-15%'
+  top:'-1%'
 },
 temp:{
 
-  top:'-540%',
+  top:'-120%',
   marginLeft:'5%',
   fontSize:20,
   color:'black',
@@ -297,11 +318,11 @@ container4:{
   borderBottomWidth: 0,
   borderBottomColor: '#000', 
   marginLeft:'5%',
-  top:'-22%'
+  top:'-3%'
 },
  
 pulse:{
-  top:'-690%',
+  top:'-150%',
   marginLeft:'5%',
   fontSize:20,
   color:'black',
@@ -315,7 +336,7 @@ container5:{
   borderBottomWidth: 0,
   borderBottomColor: '#000', 
   marginLeft:'5%',
-  top:'-28%'
+  top:'-4%'
 },
 
 container6:{
@@ -323,14 +344,14 @@ container6:{
   borderBottomWidth: 0,
   borderBottomColor: '#000', 
   marginLeft:'5%',
-  top:'-34%'
+  top:'-7%'
 },
 container7:{
   width: '90%',
   borderBottomWidth: 0,
   borderBottomColor: '#000', 
   marginLeft:'5%',
-  top:'-43%'
+  top:'-10%'
 },
 
 container8:{
@@ -338,7 +359,7 @@ container8:{
   borderBottomWidth: 0,
   borderBottomColor: '#000', 
   marginLeft:'5%',
-  top:'-52%'
+  top:'-12%'
 },
 
 });

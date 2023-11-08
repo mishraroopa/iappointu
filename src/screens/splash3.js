@@ -1,6 +1,7 @@
 import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
 import { Shadow } from 'react-native-shadow-2';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const Splash3 = ({navigation}) => {
   const account = () => {
@@ -40,8 +41,9 @@ const Splash3 = ({navigation}) => {
       </Shadow>
         
       </View>
+      
       <View style={styles.footer}>
-        <View>
+        <View style={{right:20}}>
           <View style={{marginLeft: 40}}>
             <Text style={{color: 'white', marginTop: 20, marginRight: 68}}>
               CHOOSE TIME
@@ -51,21 +53,21 @@ const Splash3 = ({navigation}) => {
           <Text style={styles.button2}>Afternoon</Text>
           <Text style={styles.button3}>Evening</Text>
         </View>
-        <View>
+        <View style={{right:'72%'}}>
           <Image
             source={require('../Assets/img/line.png')}
-            style={{height: 140, left: -150, marginTop: 20}}
+            style={{height: 140, marginTop: 20}}
           />
         </View>
         <View style={{right: 230, marginTop: 16}}>
-          <Text style={{color: 'white', fontSize: 20, left: -35}}>
+          <Text style={{color: 'white', fontSize: 20, right:50,fontFamily:'Poppins-SemiBold'}}>
             Now You Are{' '}
           </Text>
-          <Text style={{color: 'white', fontSize: 20, left: -38}}>
+          <Text style={{color: 'white', fontSize: 20, right:52,fontFamily:'Poppins-SemiBold'}}>
             {' '}
             Ready To Go{' '}
           </Text>
-          <Text style={{color: 'white', fontSize: 20, left: -38}}>
+          <Text style={{color: 'white', fontSize: 20, right: 52,fontFamily:'Poppins-SemiBold'}}>
             {' '}
             Stand With
           </Text>
@@ -74,12 +76,13 @@ const Splash3 = ({navigation}) => {
           <Image
             source={require('../Assets/img/icon.png')}
             style={{
-              width: 40,
-              height: 40,
-              left: -648,
+              width: 50,
+              height: 50,
+              right:645,
               alignSelf: 'center',
-              bottom: -190,
-              marginLeft: 50,
+              top:167,
+              paddingHorizontal:10,
+            
             }}
           />
         </TouchableOpacity>
@@ -121,9 +124,11 @@ const styles = StyleSheet.create({
     height: 249,
     width: 400,
     backgroundColor: '#d6708b',
-    top: -520,
+    bottom:'142%',
     flexDirection: 'row',
-    gap: 150,
+    gap: 149,
+   
+   
   },
   button1: {
     width: 100,

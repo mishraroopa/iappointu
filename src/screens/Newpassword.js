@@ -17,7 +17,7 @@ const Newpassword = ({navigation}) => {
         <View>
       <TouchableOpacity onPress={account}>
      <Image source ={require('../Assets/img/newlogo.png')}
-      style={{width:131,height:32,alignSelf:'center',top:'50%'}}
+      style={{width:131,height:32,alignSelf:'center',top:'50%',marginLeft:'5%'}}
       />
      </TouchableOpacity>
     </View>
@@ -31,14 +31,14 @@ const Newpassword = ({navigation}) => {
       <View>
             <Image source={require('../Assets/img/avator.png')}
      
-             style={{width:140,height:140,alignSelf:'center',top:'-20%'}}
+             style={{width:140,height:140,alignSelf:'center',bottom:'22%',marginLeft:'5%'}}
          />
           
     </View>     
               
-    <View style={{alignSelf:'center'}}>
+    <View style={{alignSelf:'center',position:'absolute',top:250}}>
 
-    <Text style={{fontSize:20,color:'white'}}>New Password</Text>
+    <Text style={{fontSize:20,color:'white',marginLeft:'5%'}}>New Password</Text>
    </View>
    </View>
     
@@ -137,6 +137,7 @@ circle:{
   borderRadius:10,
   paddingVertical: 6,
   paddingHorizontal:10,
+  marginLeft:'4%'
   },
     
    

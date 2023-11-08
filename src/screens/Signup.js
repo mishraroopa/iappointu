@@ -16,12 +16,12 @@ const Signup = ({navigation}) => {
 <View style={{backgroundColor:'white'}} >
 <TouchableOpacity onPress={account}>
 <Image source={require('../Assets/img/newlogo.png')}
-    style={{width:131,height:32,alignSelf:'center',top:'50%'}}
+    style={{width:131,height:32,alignSelf:'center',top:'62%',marginLeft:'5%'}}
 />
 </TouchableOpacity>
 <View>
 <Image source={require('../Assets/img/avator.png')}
-style={{width:145,height:145,marginTop:'10%',marginLeft:'33%'}}
+style={{width:145,height:145,marginTop:'10%',marginLeft:'32%'}}
   
 />
 </View>
@@ -38,8 +38,8 @@ style={{width:145,height:145,marginTop:'10%',marginLeft:'33%'}}
    
    <View style={styles.background}>
     <View style={{flexDirection:'row',gap:4}}>
-<Image source={require('../Assets/img/cardfname.png')}
-  style={{width:24, height:25,marginLeft:35,bottom:-42}}
+<Image source={require('../Assets/img/user2.png')}
+  style={{width:24, height:25,marginLeft:35,top:47}}
 />
 
     <TextInput 
@@ -49,9 +49,9 @@ style={{width:145,height:145,marginTop:'10%',marginLeft:'33%'}}
     style={{width:'70%',alignSelf:'center',marginTop:30}} />
     </View>
     
-    <View style={{flexDirection:'row',gap:1}}>
+    <View style={{flexDirection:'row',gap:6}}>
        <Image source ={require('../Assets/img/whitephone.png')}
-        style={{width:24, height:25,marginLeft:40,bottom:-15}}
+        style={{width:24, height:25,marginLeft:32,top:20}}
        
       /> 
       <TextInput 
@@ -61,10 +61,8 @@ style={{width:145,height:145,marginTop:'10%',marginLeft:'33%'}}
     style={{width:'70%',alignSelf:'center',marginTop:4}} />
     </View>
      
-    <View style={{flexDirection:'row',gap:4}}>
-       <Image source ={require('../Assets/img/email.png')}
-        style={{width:24, height:25,marginLeft:38,bottom:-15}}
-       /> 
+    <View style={{flexDirection:'row',gap:6}}>
+      <Text style={{fontSize:25,color:'white',marginLeft:'9%',top:'3%'}}>@</Text>
       <TextInput 
     placeholder='Email Address.'
     placeholderTextColor={'#FFFFFF'}
@@ -74,7 +72,7 @@ style={{width:145,height:145,marginTop:'10%',marginLeft:'33%'}}
     
     <View style={{flexDirection:'row',gap:4}}>
       <Image source ={require('../Assets/img/whitelock.png')}
-        style={{width:24, height:25,marginLeft:40,bottom:-16}}
+        style={{width:26, height:25,marginLeft:30,bottom:-16}}
       />
       <TextInput 
     placeholder='Password'
@@ -99,7 +97,7 @@ style={{width:145,height:145,marginTop:'10%',marginLeft:'33%'}}
 
     <View >
       <Image source={require('../Assets/img/signup2.png')}
-      style={{width:170,height:180,marginTop:'-20%',marginLeft:'59%'}}
+      style={{width:150,height:160,bottom:'50%',marginLeft:'59%'}}
       />
     </View> 
      

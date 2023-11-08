@@ -10,6 +10,12 @@ const Profile = ({navigation}) => {
 
  
   }
+
+  const logout=()=>{
+   
+    navigation.navigate('Login')
+  }
+  
   return (
     <View style={styles.background}>
       <View>
@@ -17,10 +23,10 @@ const Profile = ({navigation}) => {
           <Image
             source={require('../Assets/img/newlogo.png')}
             style={{
-              width: 130,
-              height: 33,
+              width: 135,
+              height: 32,
               alignSelf: 'center',
-              marginTop: '3%',
+              marginTop: '6%',
             }}
           />
         </TouchableOpacity>
@@ -62,11 +68,11 @@ const Profile = ({navigation}) => {
           </Text>
         </View>
         <View>
-          <View style={{top: -70}}>
-            <View style={{flexDirection: 'row', gap: 4}}>
+          <View style={{bottom:70}}>
+            <View style={{flexDirection: 'row', gap: 15}}>
               <Image
-                source={require('../Assets/img/cardfname.png')}
-                style={{width: 24, height: 25, marginLeft: 35, bottom: -42}}
+                source={require('../Assets/img/user.png')}
+                style={{width: 24, height: 25, marginLeft: 30,top:45}}
               />
 
               <TextInput
@@ -74,46 +80,43 @@ const Profile = ({navigation}) => {
                 placeholderTextColor={'#D6708B'}
                 underlineColorAndroid="#000000"
                 style={{
-                  width: '79%',
+                  width: '70%',
                   alignSelf: 'center',
                   marginTop: 30,
-                  marginLeft: -20,
+                  right:'14%'
                 }}
               />
             </View>
 
-            <View style={{flexDirection: 'row', gap: 14}}>
+            <View style={{flexDirection: 'row', gap: 17}}>
               <Image
                 source={require('../Assets/img/smartphone.png')}
-                style={{width: 24, height: 25, marginLeft: 25, bottom: -20}}
+                style={{width: 20, height: 21, marginLeft: 30, bottom: -20}}
               />
               <TextInput
                 placeholder="Mobile No."
                 placeholderTextColor={'#D6708B'}
                 underlineColorAndroid="#000000"
                 style={{
-                  width: '79%',
+                  width: '70%',
                   alignSelf: 'center',
                   marginTop: 4,
-                  marginLeft: -20,
+                  right:'14%'
                 }}
               />
             </View>
 
             <View style={{flexDirection: 'row', gap: 15}}>
-              <Image
-                source={require('../Assets/img/blackemail.png')}
-                style={{width: 24, height: 25, marginLeft: 25, bottom: -23}}
-              />
+             <Text style={{fontSize:20,top:15,marginLeft:30}}>@</Text>
               <TextInput
                 placeholder="Email Address."
                 placeholderTextColor={'#D6708B'}
                 underlineColorAndroid="#000000"
                 style={{
-                  width: '79%',
+                  width: '70%',
                   alignSelf: 'center',
                   marginTop: 4,
-                  marginLeft: -16,
+                  right:'14%'
                 }}
               />
             </View>
@@ -128,10 +131,10 @@ const Profile = ({navigation}) => {
                 placeholderTextColor={'#D6708B'}
                 underlineColorAndroid="#000000"
                 style={{
-                  width: '79%',
+                  width: '70%',
                   alignSelf: 'center',
                   marginTop: 4,
-                  marginLeft: -16,
+                  right:'17%'
                 }}
               />
             </View>
@@ -140,7 +143,7 @@ const Profile = ({navigation}) => {
             <View style={{flexDirection: 'row', gap: 14}}>
               <Image
                 source={require('../Assets/img/weight-scale.png')}
-                style={{width: 24, height: 25, marginLeft: 25, bottom: -52}}
+                style={{width: 24, height: 25, marginLeft: 25, top:56}}
               />
 
               <TextInput
@@ -148,10 +151,10 @@ const Profile = ({navigation}) => {
                 placeholderTextColor={'#D6708B'}
                 underlineColorAndroid="#000000"
                 style={{
-                  width: '79%',
+                  width: '70%',
                   alignSelf: 'center',
                   marginTop: 40,
-                  marginLeft: -16,
+                  right:'10%'
                 }}
               />
             </View>
@@ -159,17 +162,17 @@ const Profile = ({navigation}) => {
             <View style={{flexDirection: 'row', gap: 14}}>
               <Image
                 source={require('../Assets/img/question.png')}
-                style={{width: 24, height: 25, marginLeft: 25, bottom: -15}}
+                style={{width: 24, height: 25, marginLeft: 25, top:20}}
               />
               <TextInput
                 placeholder="Help & Support"
                 placeholderTextColor={'#D6708B'}
                 underlineColorAndroid="#000000"
                 style={{
-                  width: '79%',
+                  width: '70%',
                   alignSelf: 'center',
                   marginTop: 4,
-                  marginLeft: -16,
+                 right:'14%'
                 }}
               />
             </View>
@@ -177,17 +180,17 @@ const Profile = ({navigation}) => {
             <View style={{flexDirection: 'row', gap: 14}}>
               <Image
                 source={require('../Assets/img/privacy.png')}
-                style={{width: 24, height: 25, marginLeft: 25, bottom: -15}}
+                style={{width: 24, height: 25, marginLeft: 25, top:20}}
               />
               <TextInput
                 placeholder="Privacy Policy"
                 placeholderTextColor={'#D6708B'}
                 underlineColorAndroid="#000000"
                 style={{
-                  width: '79%',
+                  width: '70%',
                   alignSelf: 'center',
                   marginTop: 4,
-                  marginLeft: -16,
+                  right:'16%'
                 }}
               />
             </View>
@@ -195,35 +198,31 @@ const Profile = ({navigation}) => {
             <View style={{flexDirection: 'row', gap: 14}}>
               <Image
                 source={require('../Assets/img/terms.png')}
-                style={{width: 24, height: 25, marginLeft: 25, bottom: -16}}
+                style={{width: 24, height: 25, marginLeft: 25, top:20}}
               />
               <TextInput
                 placeholder="Terms and Conditions"
                 placeholderTextColor={'#D6708B'}
                 underlineColorAndroid="#000000"
                 style={{
-                  width: '79%',
+                  width: '70%',
                   alignSelf: 'center',
                   marginTop: 4,
-                  marginLeft: -16,
+                  right:'17%'
                 }}
               />
             </View>
-
+              
+              <TouchableOpacity onPress={logout}>
             <Image
               source={require('../Assets/img/logout.png')}
-              style={{width: 20, height: 20, bottom: -20, marginLeft: 30}}
+              style={{width: 20, height: 20,top:17, marginLeft: 30}}
             />
 
-            <View
-              style={{flexDirection: 'row', marginLeft: 50, top: -20, gap: 75}}>
-              <TextInput
-                placeholder="Log Out"
-                placeholderTextColor={'#000000'}
-                underlineColorAndroid="#000000"
-                style={{width: '30%', alignSelf: 'center', marginLeft: -1}}
-              />
-
+            <View style={{flexDirection: 'row', marginLeft: 50,bottom:20, gap: 75}}>
+             
+             <Text style={{top:15,marginLeft:'3%',top:'5%',fontWeight:'700'}}>Logout</Text>
+                 </View></TouchableOpacity>
               <View style={styles.button}>
                 <TouchableOpacity onPress={Vitals}>
                   <Text
@@ -236,7 +235,7 @@ const Profile = ({navigation}) => {
           </View>
         </View>
       </View>
-    </View>
+    
   );
 };
 
@@ -249,12 +248,14 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    width: '40%',
+    width: '30%',
     alignSelf: 'center',
-    marginTop: '5%',
+     bottom:30,
     backgroundColor: '#D6708B',
     borderRadius: 10,
     paddingVertical: 5,
     paddingHorizontal: 5,
+    marginLeft:'40%'
+    
   },
 });

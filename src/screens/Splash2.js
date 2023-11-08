@@ -47,7 +47,7 @@ const Splash2 = ({navigation}) => {
 </View>
    <TouchableOpacity onPress={Splash3}>
         <Image source={require('../Assets/img/icon.png')}
-          style={{width:40,height:40,alignSelf:'center',marginTop:10}}
+          style={{width:50,height:50,alignSelf:'center',marginTop:20}}
         />
             
     </TouchableOpacity>
