@@ -13,6 +13,7 @@ import splash3 from '../../screens/splash3';
 import Profile from '../../screens/Profile';
 import Vitals from '../../screens/Vitals';
 import Dashboard from '../../screens/Dashboard';
+import Appointment from '../../screens/Appointment';
 
  const Stack = createStackNavigator();
 
@@ -31,6 +32,8 @@ import Dashboard from '../../screens/Dashboard';
     <Stack.Screen name='Profile' component={Profile}  options={{headerShown:false}}/>
     <Stack.Screen name='Vitals' component={Vitals}   options={{headerShown:false}}/>
     <Stack.Screen name='Dashboard' component={Dashboard} options={{headerShown:false}}/>
+    <Stack.Screen name='Appointment' component={Appointment} options={{headerShown:false}}/>
+   
    </Stack.Navigator>
    </NavigationContainer>
    );

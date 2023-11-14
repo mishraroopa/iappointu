@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import React from 'react';
 
+
 const Splash = ({ navigation }) => {
   const account = () => {
     console.log('Login');

@@ -1,4 +1,4 @@
-import {View, Text, Image, StyleSheet, TextInput} from 'react-native';
+import {View, Text, Image, StyleSheet, TextInput, TouchableOpacity} from 'react-native';
 
 import {ScrollView} from 'react-native-gesture-handler';
 import Swipebutton from './Swipebutton';
@@ -6,10 +6,15 @@ import Swipebutton from './Swipebutton';
 
 
 
-const Dashboard = () => {
+const Dashboard = ({navigation}) => {
 
   const handleToggle = ()=>{
     console.log("TOggled")
+  }
+
+  const appoint=()=>{
+   
+    navigation.navigate('Appointment')
   }
   return (
     <View style={{backgroundColor: '#ffffff', flex: 1}}>
@@ -545,8 +550,9 @@ const Dashboard = () => {
           style={{width: 360, height: 60}}
         />
       </View> */}
-
-      
+         <TouchableOpacity onPress={appoint}>
+         <Text style={{color:'red',marginLeft:'50%'}}>hello</Text>
+      </TouchableOpacity>
     </View>
   );
 };
